@@ -1,0 +1,29 @@
+body{
+    padding: 10rem;
+   
+}
+
+ul{
+    list-style-type: disc;
+}
+
+li{
+    font-size: 1.5rem;
+
+}
+
+.todo{
+    margin: 0 auto;
+    background-color: wheat;
+    width: 50%;
+    border-radius: 1%;
+    border: 2px black solid;
+    padding:1rem 3rem;
+    
+}
+
+.done{
+    text-decoration: line-through;
+    /* display: none; */
+    
+}
