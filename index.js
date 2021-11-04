@@ -4,6 +4,7 @@ const uList = document.getElementsByTagName('ul')[0];
 
 
 btn.addEventListener('click', addElementOnClick);
+input.addEventListener('keypress', addElementOnKey);
 
 function createListElement(){
     var li = document.createElement('li');
@@ -15,5 +16,9 @@ function addElementOnClick (){
         createListElement();
 }
 
-
+function addElementOnKey(event){
+    if(input.value.length>0 && event.keyCode === 13){
+        createListElement();
+    }
+}
 
