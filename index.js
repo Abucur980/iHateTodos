@@ -10,6 +10,11 @@ function createListElement(){
     var li = document.createElement('li');
     li.appendChild(document.createTextNode(input.value));
     uList.appendChild(li);
+
+    // remove the item
+    li.addEventListener('click', function (){
+        li.classList.toggle('done');
+    })
 }
 
 function addElementOnClick (){
